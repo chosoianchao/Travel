@@ -87,7 +87,7 @@ public class ChoosePhotoLocationActivity extends AppCompatActivity {
 
     private void AddPhotoPlace() {
         locationPlaceList = new ArrayList<>();
-        AndroidNetworking.get(PlaceUrl.CITY + idCity +"/chilPlace")
+        AndroidNetworking.get(PlaceUrl.CITY + idCity +"/childPlace")
                 .build()
                 .getAsJSONArray(new JSONArrayRequestListener() {
                     @Override
